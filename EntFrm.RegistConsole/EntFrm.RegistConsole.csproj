@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6DE842E-6B5D-4C9F-B4BE-3CB368683656}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EntFrm.RegistConsole</RootNamespace>
+    <AssemblyName>EntFrm.RegistConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntFrm.Framework.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EntFrm.Framework.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDogDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDogDialog.Designer.cs">
+      <DependentUpon>AddDogDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetDogDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetDogDialog.Designer.cs">
+      <DependentUpon>DetDogDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainFrame.Designer.cs">
+      <DependentUpon>frmMainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenDogDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenDogDialog.Designer.cs">
+      <DependentUpon>GenDogDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPublicUtils\IPublicConsts.cs" />
+    <Compile Include="LoginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginDialog.Designer.cs">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\AppClassData.cs" />
+    <Compile Include="ViewModel\AppInfoData.cs" />
+    <Compile Include="ViewModel\EncDogModel.cs" />
+    <Compile Include="ViewModel\ILoginHelper.cs" />
+    <Compile Include="ViewModel\IMyPublicUtils.cs" />
+    <Compile Include="ViewModel\IUserContext.cs" />
+    <Compile Include="ViewModel\RegisterInfo.cs" />
+    <Compile Include="IPublicUtils\IPublicHelper.cs" />
+    <Compile Include="IPublicUtils\MyHttpUtils.cs" />
+    <Compile Include="ListAppsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListAppsForm.Designer.cs">
+      <DependentUpon>ListAppsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingDialog.Designer.cs">
+      <DependentUpon>SettingDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDogDialog.resx">
+      <DependentUpon>AddDogDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetDogDialog.resx">
+      <DependentUpon>DetDogDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainFrame.resx">
+      <DependentUpon>frmMainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenDogDialog.resx">
+      <DependentUpon>GenDogDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListAppsForm.resx">
+      <DependentUpon>ListAppsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDialog.resx">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SettingDialog.resx">
+      <DependentUpon>SettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

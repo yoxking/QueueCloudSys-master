@@ -1,0 +1,12 @@
+E:\Project_Storage\云排队管理平台\QueueCloudSolution\EntDebug\EntFrm.Framework.RabbitMq.dll
+E:\Project_Storage\云排队管理平台\QueueCloudSolution\EntDebug\EntFrm.Framework.RabbitMq.pdb
+E:\Project_Storage\云排队管理平台\QueueCloudSolution\EntFrm.Framework.RabbitMq\obj\Debug\EntFrm.Framework.RabbitMq.csprojResolveAssemblyReference.cache
+E:\Project_Storage\云排队管理平台\QueueCloudSolution\EntFrm.Framework.RabbitMq\obj\Debug\EntFrm.Framework.RabbitMq.dll
+E:\Project_Storage\云排队管理平台\QueueCloudSolution\EntFrm.Framework.RabbitMq\obj\Debug\EntFrm.Framework.RabbitMq.pdb
+F:\Project_Storage\云排队管理平台\QueueCloudSolution\EntDebug\EntFrm.Framework.RabbitMq.dll
+F:\Project_Storage\云排队管理平台\QueueCloudSolution\EntDebug\EntFrm.Framework.RabbitMq.pdb
+F:\Project_Storage\云排队管理平台\QueueCloudSolution\EntFrm.Framework.RabbitMq\obj\Debug\EntFrm.Framework.RabbitMq.csprojAssemblyReference.cache
+F:\Project_Storage\云排队管理平台\QueueCloudSolution\EntFrm.Framework.RabbitMq\obj\Debug\EntFrm.Framework.RabbitMq.csproj.CoreCompileInputs.cache
+F:\Project_Storage\云排队管理平台\QueueCloudSolution\EntFrm.Framework.RabbitMq\obj\Debug\EntFrm.Framework.RabbitMq.csproj.CopyComplete
+F:\Project_Storage\云排队管理平台\QueueCloudSolution\EntFrm.Framework.RabbitMq\obj\Debug\EntFrm.Framework.RabbitMq.dll
+F:\Project_Storage\云排队管理平台\QueueCloudSolution\EntFrm.Framework.RabbitMq\obj\Debug\EntFrm.Framework.RabbitMq.pdb

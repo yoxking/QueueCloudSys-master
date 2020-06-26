@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title> 
+</head>
+<body>
+    <div>
+        <div><button id="t" onclick="scan1()">刷ssss新列表1</button><button id="t" onclick="scan2()">刷新列表2</button></div>
+        <h3>正在等候人员列表：</h3>
+        <div id="callinglist" style="width:600px;">
+        </div>
+        <div id="waitinglist" style="width:600px;">
+            @ViewBag.Result <br />
+            @ViewBag.Test
+        </div>
+    </div>
+</body>
+</html>

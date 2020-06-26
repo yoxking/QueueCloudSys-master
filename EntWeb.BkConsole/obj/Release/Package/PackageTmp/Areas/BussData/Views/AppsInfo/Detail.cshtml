@@ -1,0 +1,162 @@
+﻿@using EntFrm.Business.Model;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Detail";
+
+    AppsInfo info = (AppsInfo)ViewBag.StackHolder;
+}
+
+@section PageSpecificStyleSheetIncludes{
+    <style type="text/css">
+        body {
+            background-color: white;
+        }
+
+        .changeicon {
+            float: right;
+            margin-right: -15px;
+            position: absolute;
+            right: -7px;
+            top: 0px;
+            border: none;
+            background-color: #18a689;
+            color: #FFFFFF;
+            line-height: 33px;
+            height: 33px;
+        }
+    </style>
+}
+
+@section PageSpecificJavascriptIncludes{
+    <script type="text/javascript">
+    $(document).ready(function () {
+    });
+    </script>
+}
+
+    <form class="form-horizontal">
+        <div class="wrapper-content">
+            <div class="panel-body" style="padding-top:0px;">
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">类型：</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" name="AppClassNo" id="AppClassNo" value="@info.sAppClassNo" readonly placeholder="程序名称" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">程序名称：</label>
+                            <div class="col-lg-8">
+                                <input type="hidden" name="AppNo" id="AppNo" value="@info.sAppNo" />
+                                <input type="text" class="form-control" name="AppCnName" id="AppCnName" value="@info.sAppCnName" readonly placeholder="程序名称" />
+                            </div>
+                        </div>
+
+                        <div class="clearfix f-hafl">
+                            <div class="col-hafl">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">编码：</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" name="AppCode" id="AppCode" value="@info.sAppCode" readonly placeholder="版本" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-hafl">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label" style="width:29% !important; padding-left:5px; padding-right:5px;">版本：</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" name="AppVersion" id="AppVersion" value="@info.iAppVersion" readonly placeholder="版本" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">客户名称：</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" name="GuestName" id="GuestName" value="@info.sGuestName" readonly placeholder="客户名称" />
+                            </div>
+                        </div>
+
+                        <div class="clearfix f-hafl">
+                            <div class="col-hafl">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">客户电话：</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" name="GuestPhone" id="GuestPhone" value="@info.sGuestPhone" readonly placeholder="客户电话" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-hafl">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label" style="width:29% !important; padding-left:5px; padding-right:5px;">客户邮箱：</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" name="GuestEMail" id="GuestEMail" value="@info.sGuestEMail" readonly placeholder="客户邮箱" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix f-hafl">
+                            <div class="col-hafl">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">授权狗号：</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" name="DogId" id="DogId" value="@info.sDogId" readonly placeholder="授权狗号" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-hafl">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label" style="width:29% !important; padding-left:5px; padding-right:5px;">授权数：</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" name="ActiveCount" id="ActiveCount" value="@info.iActiveCount" readonly placeholder="授权数" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix f-hafl">
+                            <div class="col-hafl">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">授权时间：</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" name="RegistDate" id="RegistDate" value="@info.dRegistDate" readonly placeholder="授权时间" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-hafl">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label" style="width:29% !important; padding-left:5px; padding-right:5px;">有效时间：</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" name="ActiveDate" id="ActiveDate" value="@info.dActiveDate" readonly placeholder="有效时间" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">激活码：</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" name="ActiveCode" id="ActiveCode" value="@info.sActiveCode" readonly placeholder="激活码" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">备注：</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" name="Comments" id="Comments" value="@info.sComments" readonly placeholder="备注" /> 
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed" style="display: table;margin-left: auto;margin-right: auto;">
+                            <div class="form-group m20"> 
+                                <button class="btn btn-warning" id="btn-dig-close" type="button"><i class="im-undo2"></i> 返回</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
